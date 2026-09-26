@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 13.60.213.145
+  server: 13.49.64.122
   port: 443
   udp: true
   type: ss

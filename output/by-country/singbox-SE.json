@@ -14,7 +14,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "13.60.213.145",
+      "server": "13.49.64.122",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"

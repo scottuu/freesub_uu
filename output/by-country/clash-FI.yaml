@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: est1313.ggisopi.su
+  server: 83.219.97.26
   port: 443
   udp: true
   type: vless
@@ -17,40 +17,19 @@ proxies:
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: fi.snobvpn.online
-  port: 80
+  server: 144.31.27.215
+  port: 43000
   udp: true
   type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: fi.snobvpn.online
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: me6.movieseryalirani.ir
-  port: 57361
-  udp: true
-  type: vmess
-  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 84.22.150.39
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
+  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
+  flow: xtls-rprx-vision
   tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  reality-opts:
+    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
+    short-id: 568d87a47271344e
+  servername: 144.31.27.215
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: me1.movieseryalirani.ir
   port: 443
   udp: true
@@ -70,8 +49,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,7 +57,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
