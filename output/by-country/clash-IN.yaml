@@ -15,8 +15,19 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xiaohe
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 185.67.125.90
   port: 443
   udp: true
@@ -32,19 +43,6 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: dorado.yokkastars.com
-  port: 40443
-  udp: true
-  type: vless
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
